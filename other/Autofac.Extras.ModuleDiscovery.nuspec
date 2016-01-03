@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Denis Biondic</authors>
+    <owners>Denis Biondic</owners>
+    <projectUrl>https://github.com/DenisBiondic/Autofac.Extras.ModuleDiscovery</projectUrl>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <iconUrl>http://code.google.com/p/autofac/logo</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial package version.</releaseNotes>
+    <copyright>Copyright 2016</copyright>    
+	<language>en-US</language>
+    <tags>Autofac ModuleDiscovery</tags>
+  </metadata>
+</package>
