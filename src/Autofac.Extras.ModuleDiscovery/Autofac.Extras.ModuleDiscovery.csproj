@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutofacExtensions.cs" />
-    <Compile Include="Helpers\AssemblyEnumerableExtensions.cs" />
     <Compile Include="Helpers\AssemblyItem.cs" />
     <Compile Include="Helpers\AssemblyLoader.cs" />
     <Compile Include="Helpers\EnumerableExtensions.cs" />

@@ -10,8 +10,6 @@ namespace Test.AssemblyBReferencingC
         {
             builder.RegisterType<BType>()
                 .As<IBType>()
-                .As<IStartable>()
-                .SingleInstance()
                 .WithParameter(new ResolvedParameter(
                     (pi, ctx) => pi.ParameterType == typeof (ICType),
                     (pi, ctx) => ctx.Resolve<ICType>()));

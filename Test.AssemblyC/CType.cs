@@ -1,14 +1,6 @@
-﻿using Autofac;
-
-namespace Test.AssemblyC
+﻿namespace Test.AssemblyC
 {
-    public class CType : ICType, IStartable
+    public class CType : ICType
     {
-        public bool IsStarted { get; set; }
-
-        public void Start()
-        {
-            IsStarted = true;
-        }
     }
 }

@@ -1,10 +1,8 @@
-﻿using System;
-using Autofac;
-using Test.AssemblyBReferencingC;
+﻿using Test.AssemblyBReferencingC;
 
 namespace Test.AssemblyAReferencingB
 {
-    public class AType : IAType, IStartable
+    public class AType : IAType
     {
         public AType(IBType dummyReference)
         {
@@ -12,15 +10,5 @@ namespace Test.AssemblyAReferencingB
         }
 
         public IBType DummyReference { get; set; }
-
-        public bool IsStarted { get; set; }
-
-        public void Start()
-        {
-            if (!DummyReference.IsStarted)
-                throw new InvalidOperationException("Dependency needs to be started first!");
-
-            IsStarted = true;
-        }
     }
 }

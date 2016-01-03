@@ -2,6 +2,5 @@
 {
     public interface ICType
     {
-        bool IsStarted { get; set; }
     }
 }

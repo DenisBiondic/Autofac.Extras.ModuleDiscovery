@@ -18,8 +18,7 @@ namespace Autofac.Extras.ModuleDiscovery.Helpers
         /// </returns>
         public IEnumerable<Assembly> LoadAndFindReferencedAssemblies(string assemblyPrefix)
         {
-            var loadedAssemblies = AppDomain.CurrentDomain.GetAssemblies()
-                .Where(x => x.FullName.Contains(assemblyPrefix)).ToList();
+            var loadedAssemblies = AppDomain.CurrentDomain.GetAssemblies().ToList();
 
             // need to get all references of the already loaded assemblies
             var references = loadedAssemblies.SelectMany(x => x.GetReferencedAssemblies())

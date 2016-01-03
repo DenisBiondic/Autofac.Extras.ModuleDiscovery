@@ -14,11 +14,7 @@ namespace Autofac.Extras.ModuleDiscovery.Tests
             var containerBuilder = new ContainerBuilder();
 
             // Act
-
-            //containerBuilder.RegisterAssemblyModules(typeof(ModuleB).Assembly);
-            //containerBuilder.RegisterAssemblyModules(typeof(ModuleA).Assembly);
-            //containerBuilder.RegisterAssemblyModules(typeof(ModuleC).Assembly);
-            containerBuilder.AutoregisterAllReferencedModules("Test");
+            containerBuilder.AutoregisterAllReferencedModules("Test.Assembly");
 
             // Assert
             var container = containerBuilder.Build();

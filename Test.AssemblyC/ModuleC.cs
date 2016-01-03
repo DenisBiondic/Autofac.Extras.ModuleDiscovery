@@ -7,9 +7,7 @@ namespace Test.AssemblyC
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<CType>()
-                .As<ICType>()
-                .As<IStartable>()
-                .SingleInstance();
+                .As<ICType>();
         }
     }
 }
