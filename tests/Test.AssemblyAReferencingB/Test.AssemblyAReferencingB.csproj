@@ -53,7 +53,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Test.AssemblyBReferencingC\Test.AssemblyBReferencingC.csproj">
+    <ProjectReference Include="..\Test.AssemblyBReferencingC\Test.AssemblyBReferencingC.csproj">
       <Project>{A17C702B-3BB0-4C5D-955B-5598703B9054}</Project>
       <Name>Test.AssemblyBReferencingC</Name>
     </ProjectReference>

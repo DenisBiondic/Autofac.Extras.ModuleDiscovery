@@ -83,21 +83,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\Autofac.Extras.ModuleDiscovery\Autofac.Extras.ModuleDiscovery.csproj">
+    <ProjectReference Include="..\..\src\Autofac.Extras.ModuleDiscovery\Autofac.Extras.ModuleDiscovery.csproj">
       <Project>{9a7929e1-1c15-4f01-bf20-37f7bfac7f54}</Project>
       <Name>Autofac.Extras.ModuleDiscovery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Test.AssemblyAReferencingB\Test.AssemblyAReferencingB.csproj">
+      <Project>{1594F371-4433-47F2-9DB1-C80B77D1AFD7}</Project>
+      <Name>Test.AssemblyAReferencingB</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test.AssemblyBReferencingC\Test.AssemblyBReferencingC.csproj">
       <Project>{A17C702B-3BB0-4C5D-955B-5598703B9054}</Project>
       <Name>Test.AssemblyBReferencingC</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Test.AssemblyC\Test.AssemblyC.csproj">
-      <Project>{ABD01C8F-76F2-4430-AE7C-65F3DA833CB7}</Project>
-      <Name>Test.AssemblyC</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\tests\Test.AssemblyAReferencingB\Test.AssemblyAReferencingB.csproj">
-      <Project>{1594F371-4433-47F2-9DB1-C80B77D1AFD7}</Project>
-      <Name>Test.AssemblyAReferencingB</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
